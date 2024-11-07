@@ -1,18 +1,41 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
-
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './vendor/mxent/**/*.blade.php',
+        './vendor/mxent/**/*.ts',
+        './vendor/mxent/**/*.vue',
         './storage/framework/views/*.php',
         './resources/**/*.blade.php',
-        './resources/**/*.js',
+        './resources/**/*.ts',
         './resources/**/*.vue',
     ],
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: [
+                    'system-ui',
+                    '-apple-system',
+                    '"Segoe UI"',
+                    'Roboto',
+                    '"Helvetica Neue"',
+                    '"Noto Sans"',
+                    '"Liberation Sans"',
+                    'Arial',
+                    'sans-serif',
+                    '"Apple Color Emoji"',
+                    '"Segoe UI Emoji"',
+                    '"Segoe UI Symbol"',
+                    '"Noto Color Emoji"',
+                ],
+                mono: [
+                    'SFMono-Regular',
+                    'Menlo',
+                    'Monaco',
+                    'Consolas',
+                    '"Liberation Mono"',
+                    '"Courier New"',
+                    'monospace',
+                ],
             },
         },
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Mxent\Auth\Http\Controllers;
 
 abstract class Controller
 {

@@ -1,5 +1,5 @@
 <?php
 
 return [
-    App\Providers\AppServiceProvider::class,
+    Mxent\Auth\Providers\AuthServiceProvider::class,
 ];
